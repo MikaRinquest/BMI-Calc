@@ -28,7 +28,10 @@ main {
   width: 30vw;
   height: 140px;
   text-align: center;
-  background-color: #6d30cf;
+  /* background-color: #6d30cf; */
+  border-radius: 50px;
+  background: #c49bee;
+  box-shadow: 12px 12px 14px #7f659b, -12px -12px 14px #ffd1ff;
 }
 
 .name {
@@ -85,4 +88,31 @@ main {
 .button {
   width: 60px;
   align-self: center;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 1200px) {
+  .calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .layout {
+    height: 40vh;
+    width: 40vh;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .contain > h2 {
+    font-size: 17px;
+  }
+
+  .container > h2 {
+    font-size: 17px;
+  }
 }

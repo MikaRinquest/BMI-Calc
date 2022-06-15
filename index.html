@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="calc">
+        <h1>BMI Calculator</h1>
+        <form onclick="event.preventDefault()" class="layout">
+          <div class="input">
+            <div class="contain">
+              <h2 class="name">Insert your height</h2>
+              <input type="number" name="height" id="height" />
+              <h2 class="name">cm</h2>
+              <!-- //onKeyDown="return false" -->
+            </div>
+            <div class="contain">
+              <h2 class="name">Insert your weight</h2>
+              <input type="number" name="weight" id="weight" />
+              <!-- onKeyDown="return false" -->
+              <h2 class="name">kg</h2>
+            </div>
+          </div>
+
+          <div class="container">
+            <h2>Your BMI score is:</h2>
+            <div id="output"></div>
+          </div>
+
+          <div class="buttoncontainer">
+            <button type="submit" onclick="calculate()" class="button">
+              Calculate
+            </button>
+            <!--     <button type="button" onclick="reset()">Reset</button> -->
+          </div>
+          <div id="Result"></div>
+        </form>
+      </section>
+    </main>
+    <script src="./calc.js"></script>
+  </body>
+</html>
